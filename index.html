@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arianna’s Thread · D2I 2027</title>
+<meta name="description" content="Arianna’s Thread — the 2027 Data-to-Information competition of the IEEE Information Theory Society: compact, reliable and fast DNA similarity search, run at IEEE ITW 2027, ESIT 2027 and IEEE ISIT 2027.">
+<link rel="canonical" href="https://data-to-information.github.io/d2i2027/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Arianna’s Thread · D2I 2027">
+<meta property="og:description" content="Compact, reliable and fast DNA similarity search. One challenge, three venues: IEEE ITW 2027, ESIT 2027 and IEEE ISIT 2027.">
+<meta property="og:url" content="https://data-to-information.github.io/d2i2027/">
+<meta property="og:image" content="https://data-to-information.github.io/d2i2027/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/icons/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#F2F4F5">
+
+<link rel="preload" href="assets/fonts/archivo-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/ibm-plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10"/><path d="M3 7l9 6l9 -6"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <a class="wordmark" href="./">
+      <img src="assets/img/logo-480.webp" alt="" width="34" height="34">
+      D2I 2027 <small>Arianna’s Thread</small>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="./" aria-current="page">Challenge</a>
+      <a href="itw/">IEEE ITW<span class="yr"> 2027</span></a>
+      <a href="esit/">ESIT<span class="yr"> 2027</span></a>
+      <a href="isit/">IEEE ISIT<span class="yr"> 2027</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===== Hero ===================================================== -->
+  <section class="hero">
+    <div class="shell hero__inner">
+      <div>
+        <p class="label">D2I 2027 · Data-to-Information Competition Series</p>
+        <h1 class="hero__title"><span>Arianna’s</span><span>Thread</span></h1>
+        <p class="hero__lede">Make DNA similarity search compact, reliable and fast.</p>
+        <p class="hero__text">A competition for students, researchers and engineers, presented by the IEEE Information Theory Society’s Student &amp; Outreach Committee. One challenge, three venues in 2027.</p>
+
+        <ul class="stops" aria-label="2027 venues, in date order">
+          <li><a href="itw/">
+            <span class="when">Apr 5–8</span>
+            <span><span class="what">IEEE ITW 2027</span> <span class="where">· Munich</span></span>
+            <span class="go" aria-hidden="true">→</span>
+          </a></li>
+          <li><a href="esit/">
+            <span class="when">Jun 20–25</span>
+            <span><span class="what">ESIT 2027</span> <span class="where">· Ankara</span></span>
+            <span class="go" aria-hidden="true">→</span>
+          </a></li>
+          <li><a href="isit/">
+            <span class="when">Jun 27 – Jul 2</span>
+            <span><span class="what">IEEE ISIT 2027</span> <span class="where">· Sorrento</span></span>
+            <span class="go" aria-hidden="true">→</span>
+          </a></li>
+        </ul>
+      </div>
+
+      <div class="hero__logo">
+        <picture>
+          <source srcset="assets/img/logo-480.webp 480w, assets/img/logo.webp 800w" sizes="(max-width: 820px) 13rem, 24rem" type="image/webp">
+          <img src="assets/img/logo.png" width="800" height="800"
+               alt="Arianna’s Thread logo: a red DNA double helix running through the centre of a circular labyrinth">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== The task, in one picture ================================= -->
+  <section class="section section--wash" id="task">
+    <div class="shell split">
+      <div class="section__head">
+        <p class="label">The task</p>
+        <h2>Find the thread back to the right sequence</h2>
+        <p>Given a noisy DNA fragment, retrieve its closest matches from a large reference collection.</p>
+        <p>A read and its source differ by insertions, deletions and substitutions — their edit distance. The question is how few bits per sequence are enough to still find the right match, and how fast that search can run.</p>
+      </div>
+
+      <figure class="probe" aria-labelledby="probe-cap">
+        <div class="probe__plot">
+          <div class="probe__row probe__row--query">
+            <span class="lab">query</span><span class="seq">ACGTT<span class="sub">C</span>GCCAT<span class="gap">–</span>ACTTGGTCAATCG</span><span class="d">noisy read</span>
+          </div>
+          <div class="probe__row probe__row--ref">
+            <span class="lab">#000412</span><span class="seq">ATAAGTCTCGCGGAGGAGGTCCGG</span><span class="d">d = 14</span>
+          </div>
+          <div class="probe__row probe__row--ref">
+            <span class="lab">#003871</span><span class="seq">AAATTAGCCACAACTTCGCAATCG</span><span class="d">d = 7</span>
+          </div>
+          <div class="probe__row probe__row--ref">
+            <span class="lab">#019205</span><span class="seq">CTTTCTGGACAGTGAGTTACGAAT</span><span class="d">d = 14</span>
+          </div>
+          <div class="probe__row probe__row--ref">
+            <span class="lab">#027734</span><span class="seq">ATCCAAGAAACGTACAAGGGTTTC</span><span class="d">d = 16</span>
+          </div>
+          <div class="probe__row probe__row--ref probe__row--match">
+            <span class="lab">#044190</span><span class="seq">ACGTT<span class="sub">A</span>GCCATGACTTGG<span class="gap">–</span>CAATCG</span><span class="d">d = 3 nearest</span>
+          </div>
+          <div class="probe__row probe__row--ref">
+            <span class="lab">#058362</span><span class="seq">TTCTGCATGCCGCAAGTTCGTCGT</span><span class="d">d = 15</span>
+          </div>
+          <div class="probe__row probe__row--ref">
+            <span class="lab">#071509</span><span class="seq">GGCTACTCGCCTGCGGCTGGGCAA</span><span class="d">d = 14</span>
+          </div>
+          <div class="probe__row probe__row--more">
+            <span class="lab">…</span><span class="seq">and millions more references</span>
+          </div>
+
+          <!-- The thread. Units: 10 per em (1ch = 6). Rows are 22 units tall.
+               Starts beside the query, weaves down the gutter, and underlines the match. -->
+          <svg class="probe__thread" viewBox="0 0 201 198" aria-hidden="true" focusable="false">
+            <path pathLength="1" d="M46.5 11 C50.5 16.5 50.5 27.5 46.5 33 S42.5 49.5 46.5 55 S50.5 71.5 46.5 77 S42.5 93.5 46.5 99 C50.5 104.5 46.5 129 56 129 L199 129"/>
+            <circle class="start" cx="46.5" cy="11" r="2.2"/>
+            <circle class="end" cx="199" cy="129" r="2.2"/>
+          </svg>
+        </div>
+
+        <figcaption id="probe-cap">
+          Illustrative example. The noisy read and its nearest reference differ by one substitution, one deletion and one insertion: edit distance 3. The next closest reference is 7 edits away.
+          <span class="key" aria-hidden="true">
+            <span><span class="sub">C</span> substitution</span>
+            <span><span class="gap">–</span> gap: insertion or deletion</span>
+            <span>d = edit distance to the query</span>
+          </span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== Three levels ============================================= -->
+  <section class="section" id="challenge">
+    <div class="shell">
+      <div class="section__head">
+        <p class="label">The challenge</p>
+        <h2>Three levels of one retrieval pipeline</h2>
+        <p>Arianna’s Thread invites students, researchers and engineers to make DNA similarity search more compact, reliable and fast. The competition connects three levels.</p>
+      </div>
+
+      <ol class="levels">
+        <li class="level">
+          <p class="label">Level 1 <span class="arrow" aria-hidden="true">→</span></p>
+          <h3>Represent and compress</h3>
+          <p>Turn sequences into finite-bit codes: embeddings that approximately map edit distance into Euclidean distance, followed by source coding and quantization.</p>
+        </li>
+        <li class="level">
+          <p class="label">Level 2 <span class="arrow" aria-hidden="true">→</span></p>
+          <h3>Search</h3>
+          <p>Search those codes with efficient data structures, returning the closest matches to a noisy query.</p>
+        </li>
+        <li class="level">
+          <p class="label">Level 3</p>
+          <h3>Accelerate</h3>
+          <p>Accelerate the complete retrieval pipeline on GPUs, so that it keeps up with archive-scale collections.</p>
+        </li>
+      </ol>
+
+      <p class="note"><strong>One task per venue.</strong> Each 2027 venue hosts one task on this shared topic. Which task runs at which venue will be announced on the venue pages.</p>
+    </div>
+  </section>
+
+  <!-- ===== Information theory ======================================= -->
+  <section class="section section--rule" id="information-theory">
+    <div class="shell split">
+      <div>
+        <p class="label">Where information theory meets DNA search</p>
+        <p class="question" style="margin-top:1rem">How many bits must we retain to retrieve a sequence reliably?</p>
+      </div>
+      <div class="prose">
+        <p>DNA representation can be formulated as a rate–distortion problem, with edit distance as the measure of distortion. Participants will explore embeddings that approximately map edit distance — the insertions, deletions and substitutions separating sequences — into Euclidean distance. Source coding and quantization, with trellis-coded quantization as a baseline, then produce compact searchable codes.</p>
+        <p>This brings rate–distortion theory and coding into a task where preserving the answer can matter more than reconstructing the input. Research on compression for similarity identification provides a theoretical starting point.<sup><a href="#ref-3" class="ref-link" aria-label="Reference 3">[3]</a></sup></p>
+
+        <ul class="measures" aria-label="What the benchmark compares">
+          <li><span class="label">First</span><span>Bits per sequence versus successful retrieval</span></li>
+          <li><span class="label">Then</span><span>Total memory use and speed</span></li>
+          <li><span class="label">Kept apart</span><span>Embedding distortion, DNA reconstruction error and retrieval reliability are measured separately</span></li>
+          <li><span class="label">Optional</span><span>Exact reconstruction of the sequence</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Why it matters =========================================== -->
+  <section class="section section--rule" id="why">
+    <div class="shell split">
+      <div class="section__head">
+        <p class="label">Why it matters</p>
+        <h2>Discoveries are already in the archives</h2>
+        <p>Biological archives contain discoveries waiting to be found, but their scale makes efficient search a research problem in its own right.</p>
+      </div>
+      <ul class="facts">
+        <li class="fact">
+          <span class="yr">2025</span>
+          <span><strong>MetaGraph</strong> made <span class="num">18.8 million</span> DNA and RNA sequence sets searchable using compressed indexes.<sup><a href="#ref-1" aria-label="Reference 1">[1]</a></sup></span>
+        </li>
+        <li class="fact">
+          <span class="yr">2022</span>
+          <span><strong>Serratus</strong> searched <span class="num">10.2 petabases</span> across <span class="num">5.7 million</span> samples and identified more than <span class="num">100,000</span> previously unknown RNA viruses.<sup><a href="#ref-2" aria-label="Reference 2">[2]</a></sup></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Venues =================================================== -->
+  <section class="section section--wash" id="venues">
+    <div class="shell">
+      <div class="section__head">
+        <p class="label">2027 venues</p>
+        <h2>Three venues, one thread</h2>
+        <p>The topic stays the same all year. Each venue runs one task, with its own timeline, registration and Kaggle competition.</p>
+      </div>
+
+      <ul class="venues">
+        <li class="venue"><a href="itw/">
+          <span class="when">Apr 5–8, 2027</span>
+          <span class="name">IEEE ITW 2027<small>Information Theory Workshop · Munich, Germany</small></span>
+          <span class="task">Task to be announced</span>
+          <span class="go" aria-hidden="true">→</span>
+        </a></li>
+        <li class="venue"><a href="esit/">
+          <span class="when">Jun 20–25, 2027</span>
+          <span class="name">ESIT 2027<small>European School of Information Theory · Ankara, Türkiye</small></span>
+          <span class="task">Task to be announced</span>
+          <span class="go" aria-hidden="true">→</span>
+        </a></li>
+        <li class="venue"><a href="isit/">
+          <span class="when">Jun 27 – Jul 2, 2027</span>
+          <span class="name">IEEE ISIT 2027<small>International Symposium on Information Theory · Sorrento, Italy</small></span>
+          <span class="task">Task to be announced</span>
+          <span class="go" aria-hidden="true">→</span>
+        </a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Get involved ============================================= -->
+  <section class="section" id="get-involved">
+    <div class="shell">
+      <div class="section__head">
+        <p class="label">Get involved</p>
+        <h2>Help us build Arianna’s Thread</h2>
+      </div>
+
+      <ul class="roles">
+        <li class="role">
+          <h3>Participate</h3>
+          <p>Students and researchers from information theory, machine learning, bioinformatics and systems are warmly invited. Registration details will appear on each venue page.</p>
+        </li>
+        <li class="role">
+          <h3>Volunteer</h3>
+          <p>Help with baselines, evaluation and mentoring.</p>
+        </li>
+        <li class="role">
+          <h3>Sponsor</h3>
+          <p>Contribute prizes, compute access, student support or technical mentors, and meet participants and recruit talent.</p>
+        </li>
+      </ul>
+
+      <a class="cta" href="mailto:khac-hoang.ngo@liu.se,alancho@ing.uc3m.es,rini.stefano@gmail.com?subject=Arianna%E2%80%99s%20Thread%20(D2I%202027)">
+        <svg aria-hidden="true" focusable="false"><use href="#i-mail"/></svg>Email the organizers</a>
+
+      <div class="people-block" id="organizers">
+      <p class="label">Organizers · IEEE Information Theory Society, Student &amp; Outreach Committee</p>
+      <ul class="people">
+        <li class="person"><span class="who">Khac-Hoang Ngo</span><a href="mailto:khac-hoang.ngo@liu.se">khac-hoang.ngo@liu.se</a></li>
+        <li class="person"><span class="who">Alejandro Lancho Serrano</span><a href="mailto:alancho@ing.uc3m.es">alancho@ing.uc3m.es</a></li>
+        <li class="person"><span class="who">Stefano Rini</span><a href="mailto:rini.stefano@gmail.com">rini.stefano@gmail.com</a></li>
+      </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--rule" id="references" style="padding-block: 2rem">
+    <div class="shell">
+      <p class="label" style="margin-bottom:1rem">Selected references</p>
+      <ol class="refs">
+        <li id="ref-1"><span>Karasikov et al. <a href="https://doi.org/10.1038/s41586-025-09603-w">Efficient and accurate search in petabase-scale sequence repositories</a>. <em>Nature</em> (2025).</span></li>
+        <li id="ref-2"><span>Edgar et al. <a href="https://doi.org/10.1038/s41586-021-04332-2">Petabase-scale sequence alignment catalyses viral discovery</a>. <em>Nature</em> (2022).</span></li>
+        <li id="ref-3"><span>Ingber &amp; Weissman. <a href="https://arxiv.org/abs/1312.2063">The minimal compression rate for similarity identification</a>. arXiv:1312.2063 (2013).</span></li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell footer__inner">
+    <div class="footer__society">
+      <img src="assets/img/partners/itsoc_logo.png" alt="IEEE Information Theory Society" width="400" height="376">
+      <span>IEEE Information Theory Society<br>Student &amp; Outreach Committee</span>
+    </div>
+    <span></span>
+    <p class="footer__past">Previous editions: <a href="https://data-to-information.github.io/isit2026/">IEEE ISIT 2026</a> · <a href="https://data-to-information.github.io/esit2026/">ESIT 2026</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
