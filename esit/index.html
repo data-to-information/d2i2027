@@ -40,11 +40,11 @@
 <header class="masthead">
   <div class="shell masthead__inner">
     <a class="wordmark" href="../">
-      <img src="../assets/img/logo-480.webp" alt="" width="34" height="34">
+      <img src="../assets/img/logo-480.webp" alt="" width="30" height="30">
       D2I 2027 <small>Arianna’s Thread</small>
     </a>
     <nav class="nav" aria-label="Main">
-      <a href="../">Challenge</a>
+      <a href="../">Overview</a>
       <a href="../itw/">IEEE ITW<span class="yr"> 2027</span></a>
       <a href="../esit/" aria-current="page">ESIT<span class="yr"> 2027</span></a>
       <a href="../isit/">IEEE ISIT<span class="yr"> 2027</span></a>
@@ -55,12 +55,13 @@
 <main id="main">
 
   <section class="venue-hero">
-    <div class="shell">
-      <p class="label">Arianna’s Thread · venue 2 of 3</p>
-      <h1 class="venue-hero__title">ESIT 2027</h1>
-      <p class="venue-hero__sub">IEEE European School of Information Theory · Bilkent University, Ankara, Türkiye · June 20–25, 2027</p>
-
-      <ol class="route" aria-label="2027 venues, in date order" style="margin-top:2.75rem; max-width:40rem">
+    <div class="shell venue-hero__inner">
+      <div>
+        <p class="label">Arianna’s Thread · venue 2 of 3</p>
+        <h1 class="venue-hero__title">ESIT 2027</h1>
+        <p class="venue-hero__sub">IEEE European School of Information Theory · Bilkent University, Ankara, Türkiye · June 20–25, 2027</p>
+      </div>
+      <ol class="route" aria-label="2027 venues, in date order">
         <li><a href="../itw/"><span class="when">Apr 5–8</span><span class="what">IEEE ITW 2027</span></a></li>
         <li aria-current="step"><a href="../esit/"><span class="when">Jun 20–25</span><span class="what">ESIT 2027</span></a></li>
         <li><a href="../isit/"><span class="when">Jun 27 – Jul 2</span><span class="what">IEEE ISIT 2027</span></a></li>
@@ -69,37 +70,36 @@
   </section>
 
   <section class="section section--rule">
-    <div class="shell split">
-      <div class="section__head">
-        <p class="label">At ESIT 2027</p>
-        <h2>What we know so far</h2>
-        <p>The topic is shared by all three 2027 venues; ESIT 2027 runs one task on it. Everything specific to this competition will be posted here as it is confirmed.</p>
-      </div>
-
-      <dl class="facts-table">
-        <div><dt>Dates</dt><dd>June 20–25, 2027</dd></div>
-        <div><dt>Place</dt><dd>Bilkent University, Ankara, Türkiye</dd></div>
-        <div><dt>Event website</dt><dd><span class="tba">To be announced</span></dd></div>
-        <div><dt>Task</dt><dd><span class="tba">To be announced</span><br><span style="font-size:.95rem;color:var(--graphite)">One of: represent and compress · search · accelerate</span></dd></div>
-        <div><dt>Format</dt><dd><span class="tba">To be announced</span></dd></div>
-        <div><dt>Timeline</dt><dd><span class="tba">To be announced</span></dd></div>
-        <div><dt>Registration</dt><dd><span class="tba">To be announced</span></dd></div>
-        <div><dt>Kaggle</dt><dd><span class="tba">To be announced</span></dd></div>
-        <div><dt>Prizes</dt><dd><span class="tba">To be announced</span></dd></div>
-      </dl>
-    </div>
-  </section>
-
-  <section class="section section--wash">
-    <div class="shell split">
-      <div class="section__head">
-        <p class="label">The shared topic</p>
-        <h2>Arianna’s Thread</h2>
-        <p>Given a noisy DNA fragment, retrieve its closest matches from a large reference collection — with as few bits per sequence as possible, and fast.</p>
-      </div>
+    <div class="shell cols-2">
       <div>
-        <p>The challenge connects three levels: representing and compressing sequences into finite-bit codes, searching those codes, and accelerating the complete retrieval pipeline on GPUs.</p>
-        <p><a href="../#challenge">Read the full challenge →</a></p>
+        <div class="head">
+          <p class="label">At ESIT 2027</p>
+          <h2>Details</h2>
+        </div>
+        <dl class="facts-table">
+          <div><dt>Dates</dt><dd>June 20–25, 2027</dd></div>
+          <div><dt>Place</dt><dd>Bilkent University, Ankara, Türkiye</dd></div>
+          <div><dt>Event website</dt><dd><span class="tba">To be announced</span></dd></div>
+          <div><dt>Task</dt><dd><span class="tba">To be announced</span><small>One of: represent and compress, search, accelerate</small></dd></div>
+          <div><dt>Timeline</dt><dd><span class="tba">To be announced</span></dd></div>
+          <div><dt>Registration</dt><dd><span class="tba">To be announced</span></dd></div>
+          <div><dt>Kaggle</dt><dd><span class="tba">To be announced</span></dd></div>
+          <div><dt>Recognition</dt><dd><span class="tba">To be announced</span></dd></div>
+        </dl>
+      </div>
+
+      <div>
+        <div class="head">
+          <p class="label">How it fits together</p>
+          <h2>One task of three</h2>
+        </div>
+        <ul class="rules-list">
+          <li><strong>One task here.</strong>ESIT 2027 hosts one of the three Arianna’s Thread tasks. The other two run at the other venues.</li>
+          <li><strong>Enter on its own.</strong>You can take part here without entering the other tasks. Baseline components are provided.</li>
+          <li><strong>Own leaderboard.</strong>This venue has its own leaderboard and recognition for the top teams.</li>
+          <li><strong>Overall leaderboard.</strong>If several teams complete all three tasks, we will also publish an overall leaderboard.</li>
+        </ul>
+        <p class="small" style="margin-top:1rem">The problem: given a noisy DNA fragment, find its closest matches in a large reference collection while storing as few bits per sequence as possible. <a href="../#how-it-works">All three tasks →</a></p>
         <a class="cta" href="mailto:khac-hoang.ngo@liu.se,alancho@ing.uc3m.es,rini.stefano@gmail.com?subject=Arianna%E2%80%99s%20Thread%20(esit)">
           <svg aria-hidden="true" focusable="false"><use href="#i-mail"/></svg>Email the organizers</a>
       </div>
@@ -110,12 +110,11 @@
 
 <footer class="footer">
   <div class="shell footer__inner">
-    <div class="footer__society">
+    <a class="footer__society" href="https://www.itsoc.org/">
       <img src="../assets/img/partners/itsoc_logo.png" alt="IEEE Information Theory Society" width="400" height="376">
       <span>IEEE Information Theory Society<br>Student &amp; Outreach Committee</span>
-    </div>
-    <span></span>
-    <p class="footer__past">Previous editions: <a href="https://data-to-information.github.io/isit2026/">IEEE ISIT 2026</a> · <a href="https://data-to-information.github.io/esit2026/">ESIT 2026</a></p>
+    </a>
+    <p class="footer__links"><a href="https://www.itsoc.org/">itsoc.org</a> · <a href="../#previous-editions">Previous editions</a> · <a href="../#get-involved">Contact</a></p>
   </div>
 </footer>
 
